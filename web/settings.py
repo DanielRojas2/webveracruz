@@ -17,7 +17,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-%3c10d+r7_n&3
 DEBUG = 'RENDER' not in os.environ
 #'RENDER' not in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://santaveracruzsrl.site/',
+]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
