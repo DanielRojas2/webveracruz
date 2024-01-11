@@ -1,0 +1,96 @@
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 300px;
+    min-width: 60vh;
+    overflow: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-container {
+    position: relative;
+    margin: 50px 0; /* Aumentado el margen inferior para dar más espacio */
+}
+
+input,
+textarea {
+    width: 98%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #007BFF;
+    transition: border-bottom 0.3s;
+    color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #009688;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #888;
+    pointer-events: none;
+    transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:valid + label,
+textarea:valid + label {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    padding-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #007BFF;
+    transition: border-bottom 0.3s;
+    color: #333;
+    resize: none; /* Evita la redimensión */
+    height: 150px; /* Tamaño fijo del área de mensaje */
+    overflow: auto; /* Muestra la barra de desplazamiento solo si es necesario */
+}
+
+/* Estilo para el mensaje de introducción */
+textarea + label {
+    top: -20px; /* Ajusta la posición para el área de mensaje */
+}

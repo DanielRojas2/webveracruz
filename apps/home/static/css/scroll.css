@@ -1,0 +1,17 @@
+html {
+    scroll-behavior:smooth;
+}
+
+.scroll-boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  /* Estilos cuando se muestra el botón */
+  .scroll-boton.mostrar {
+    opacity: 1;
+  }

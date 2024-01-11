@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="container-fluid fondo-3" style="margin-bottom: 90px;">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 text-white text-uppercase">Personal</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="/">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Personal</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Team Start: Cambiar imagenes, poner enlaces. Ampliar si es necesario -->
+<div class="container-fluid py-5" id="personal">
+    <div class="container py-5">
+        <div class="text-center pb-2">
+            <h6 class="text-uppercase">Nuestro Personal</h6>
+            <h1 class="mb-4">Conoce Nuestro Personal</h1>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="rounded" style="height: 200px; background-color: #0a4121;"></div>
+                <div class="owl-carousel team-carousel position-relative" style="margin-top: -97px; padding: 0 30px;">
+                {% if personal %}
+                    {% for personal in personal %}
+                    <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
+                        <h5 class="mb-2 px-4">{{personal.nombre_personal}}</h5>
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="{{personal.foto_personal.url}}" alt="personal">
+                            <div class="team-social">
+                                <a class="btn btn-outline-light btn-square mx-1" href="{{personal.enlace_contacto_1}}"><i class="bi bi-whatsapp"></i></a>
+                                <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                <h1 class="text-white" style="font-size: 20px;">No hay personal agregado</h1>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
+{% endblock %}

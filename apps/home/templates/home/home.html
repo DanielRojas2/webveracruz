@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Carousel Start: Esperando feedback -->
+    <div class="container-fluid p-0 mb-5 pb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/fondo/mercante.jpg' %}" style="object-fit: cover; position: absolute;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Adaptamos nuestros servicios a tu necesidad</h4>
+                            <h3 class="display-2 text-capitalize text-white mb-4">Servicio Personalizado</h3>
+                            <a class="btn btn-primary py-3 px-5 mt-2" href="contacto/">Obt&eacute;n una cita</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/fondo/contenedor.jpg' %}" style="object-fit: cover; position: absolute;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Nuestra experiencia a tu disposición</h4>
+                            <h3 class="display-2 text-capitalize text-white mb-4">Personal experimentado</h3>
+                            <a class="btn btn-primary py-3 px-5 mt-2" href="#">Ll&aacute;manos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-lg btn-secondary btn-lg-square">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-lg btn-secondary btn-lg-square">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Services Start Falta textos descriptivos-->
+    <div class="container-fluid py-5" id="servicios">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3" style="margin-top: 25px;">
+                    <h6 class="text-uppercase">Nuestros Servicios</h6>
+                    <h1 class="mb-4">Servicio Personalizado</h1>
+                    <p>Adaptamos nuestros servicios a tu necesidad</p>
+                </div>
+                <div class="col-lg-9 pt-5 pt-lg-0">
+                    <div class=" rounded" style="height: 200px; background-color: #0a4121;"></div>
+                    <div class="owl-carousel service-carousel position-relative" style="margin-top: -100px; padding: 0 30px;">
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="bi bi-airplane-fill fa-2x"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Importaciones Exportaciones</h5>
+                            <p class="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="bi bi-truck fa-2x"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Reimportación Reexportación</h5>
+                            <p class="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="bi bi-boxes fa-2x"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Consumo - Anticipado</h5>
+                            <p class="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="bi bi-box-seam-fill fa-2x"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Admisión Temporal Ritex</h5>
+                            <p class="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- About Start: Esperando feedback -->
+    <div class="container-fluid py-5" id="acerca">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded" src="{% static 'img/personal/personal.jpg' %}" alt="agencia aduanera" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-lg-7 mt-4 mt-lg-0">
+                    <h6 class="text-uppercase position-relative" style="margin-top: 20px;">Brindamos Servicios Confiables y Efectivos</h6>
+                    <h1 class="mb-4">“El imperio es el comercio.”</h1>
+                    <p>Ofrecemos servicios de asesoría y trámites en materia aduanera y de comercio exterior de alta calidad a través de la comunicación directa con nuestros clientes para satisfacer eficientemente sus necesidades, así como participar en el desarrollo económico del país.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start: Cambiar textos -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100 overflow-hidden cover-img">
+                        <img class="position-absolute w-100 h-100" src="{% static 'img/fondo/logistica.jpg' %}" style="object-fit: cover; max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="feature-text p-lg-5 cover">
+                        <h6 class="text-uppercase">Nuestras Ventajas</h6>
+                        <h1 class="mb-4">Por qu&eacute; Elegirnos</h1>
+                        <div class="d-flex mb-4">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">01</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Los Mejores Precios</h5>
+                                <p class="m-0">Encuentra la mejor relación calidad precio</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">02</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Satisfacción Garantizada</h5>
+                                <p class="m-0">Nuestro compromiso es servirte</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">03</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Líderes Locales</h5>
+                                <p class="m-0">Nuestro objetivo y misión es tu satisfacción.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex" style="margin-top: 25px;">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">04</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Abierto Todos los Días</h5>
+                                <p class="m-0">Horario flexible para adaptarnos a ti</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Features Start: Cambiar textos -->
+    <div class="container-fluid py-5">
+        <div class="container py-5" id="politica">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100 overflow-hidden cover-img">
+                        <img class="position-absolute w-100 h-100" src="{% static 'img/fondo/portada.jpg' %}" style="object-fit: cover; max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="feature-text p-lg-5 cover">
+                        <h6 class="text-uppercase">Políticas</h6>
+                        <h1 class="mb-4">De Seguridad</h1>
+                        <div class="d-flex mb-4">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">01</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Los Mejores Precios</h5>
+                                <p class="m-0">Encuentra la mejor relación calidad precio</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">02</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Satisfacción Garantizada</h5>
+                                <p class="m-0">Nuestro compromiso es servirte</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">03</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Líderes Locales</h5>
+                                <p class="m-0">Nuestro objetivo y misión es tu satisfacción.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex" style="margin-top: 25px;">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">04</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Abierto Todos los Días</h5>
+                                <p class="m-0">Horario flexible para adaptarnos a ti</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+{% endblock %}
