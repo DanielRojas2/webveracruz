@@ -18,7 +18,7 @@ DEBUG = 'RENDER' not in os.environ
 #'RENDER' not in os.environ
 
 ALLOWED_HOSTS = [
-    'https://santaveracruzsrl.site/',
+    'santaveracruzsrl.site',
 ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
